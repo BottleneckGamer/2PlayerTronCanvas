@@ -1,0 +1,21 @@
+﻿<Window x:Class="_2PlayerTronCanvasViaSnake.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2PlayerTronCanvasViaSnake"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid Background="Gray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Name="paintCanvas" Background="White"
+                Grid.Column="1" HorizontalAlignment="Stretch" MaxWidth="750" MaxHeight="750">            
+        </Canvas>
+        <TextBlock x:Name="p2score" Foreground="Blue" Text="P2 Score: 0" FontSize="35" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Margin="580,10,0,0" Height="54" Width="190"/>
+        <TextBlock x:Name="p1score" Foreground="Red" Text="P1 score: 0" FontSize="35" TextWrapping="Wrap" Height="54" Width="183" Grid.ColumnSpan="2" Margin="36,10,574,705"/>
+
+    </Grid>
+</Window>
